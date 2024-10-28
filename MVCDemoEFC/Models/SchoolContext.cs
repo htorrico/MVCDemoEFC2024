@@ -10,7 +10,7 @@ namespace MVCDemoEFC.Models
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("Server=DESKTOP-BCQFL9J\\SQLEXPRESS; Database=MVCDemoEFCDB; Integrated Security=True");
+            optionsBuilder.UseSqlServer("Server=DESKTOP-BCQFL9J\\SQLEXPRESS; Database=MVCDemoEFCDB; Integrated Security=True;Trust Server Certificate=True ");
         }
     }
 }
